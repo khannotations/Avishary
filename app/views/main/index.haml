@@ -2,9 +2,11 @@
 %h3
   You are editing
   %span#url= @p
+  %span#title.hide= @t
 %img#img{:src => @p}
+#aviary
 
 %a#edit.btn Edit!
 %br
 .share
-  %a{:href => "www.tumble.com/share"} Share on Tumblr!
+  %a#t{:href => "http://www.tumblr.com/share?v=3&u=#{URI.escape(@p, Regexp.new("[^#{URI::PATTERN::UNRESERVED}]"))}", :target => "_blank"} Share on Tumblr!
