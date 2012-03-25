@@ -4,5 +4,9 @@ class MainController < ApplicationController
     puts params
     @p = params[:url]
     @t = params[:title]
+    if not @p
+      render "show"
+      return
+    end
   end
 end
