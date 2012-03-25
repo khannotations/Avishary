@@ -3,7 +3,7 @@ $(document).ready(function() {
   url = $("#url").html();
   tit = $("#tit").html();
   var featherEditor = new Aviary.Feather({
-    apiKey: '73b7c873b',
+    apiKey: '22e666ea9',
     apiVersion: 2,
     onSave: function(imageID, newURL) {
         var img = document.getElementById(imageID);
